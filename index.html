@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--      CSS     -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <!--      JS     -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <div class="uk-container uk-flex uk-flex-center">
+  <div class="uk-margin-large-top">
+      <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: user"></span>
+          <input id="myInput" class="uk-input" type="text" value"Guest name">
+      </div>
+  </div>
+  <br>
+</div>
+
+<div class="uk-margin-top uk-flex uk-flex-center">
+                  <textarea id="description" class="uk-textarea" style="width: 500px; height: 100px;" name="name"></textarea>
+</div>
+<div class="uk-margin-top uk-flex uk-flex-center">
+  <button id="addGuestListEnd" onclick="addGuest()" class="uk-button uk-button-default uk-margin-right">Add Guest @ list end</button>
+  <button id="addGuestListStart" onclick="addGuestStart()" class="uk-button uk-button-default uk-margin-right">Add Guest @ list start</button>
+  <button id="removeFirst" onclick="removeFirst()" class="uk-button uk-button-default">Remove First</button>
+  <button id="removeLast" onclick="removeLast()" class="uk-button uk-button-default uk-margin-left">Remove Last</button>
+  <button id="reverseList" onclick="reverseList()" class="uk-button uk-button-default uk-margin-left">Reverse List</button>
+</div>
+<p id="test"></p>
+
+<div id ="list" class="uk-container uk-margin-large-top">
+  <button class="uk-align-right uk-button uk-button-default" type="button">Bottom Justify</button>
+      <div uk-dropdown="pos: bottom-justify">
+          <ul class="uk-nav uk-dropdown-nav">
+              <li id="sortaz" class="uk-active"><a href="#" onclick="sortAZ()">Sort A-Z</a></li>
+              <li id="sortza" ><a href="#" onclick="sortZA()">Sort Z-A</a></li>
+          </ul>
+      </div>
+  <table id="guests" class="uk-table uk-table-justify uk-table-divider">
+      <thead>
+          <tr>
+              <th class="uk-width-small">Guest</th>
+              <th>Description</th>
+          </tr>
+      </thead>
+  </table>
+</div>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+ </html>
