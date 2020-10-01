@@ -1,3 +1,3 @@
 # guest-list
 
-My take on guest-list using plain Javascript ES6
+Simple guest list using only HTML, CSS, Javascript
